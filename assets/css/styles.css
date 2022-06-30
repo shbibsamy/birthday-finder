@@ -1,0 +1,68 @@
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Structure */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 800px;
+    margin: auto;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    padding: 1rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* Styles générales */
+h1 {
+    font-size: 1.5rem;
+}
+
+small {
+    font-size: 0.7rem;
+}
+
+/* Labels */
+.label-prenom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.label-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label-date span {
+
+}
+
+/* Inputs */
+.input-date {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 5rem;
+}

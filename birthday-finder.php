@@ -1,0 +1,48 @@
+<?php include_once("script-birthday-calculator.php") ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mettez votre date d'anniversaire et l'appli vous dira combien de jours il faut attendre.">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Compteur Anniversaire</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>
+                Calcul d'anniversaire
+            </h1>
+        </header>
+        <main>
+            <form action="index.php">
+                <label class="label-prenom">
+                    <span>
+                        Veuillez entrer votre prénom.
+                    </span>
+                    <input type="text" name="nom" class="input-nom">
+                </label>
+                <fieldset>
+                    <legend>
+                        Veuillez compléter les champs ci-dessous.
+                    </legend>
+                    <label class="label-date">
+                        <span>Jour de naissance :</span>
+                        <input type="number" class="input-date">
+                        <small>(en chiffres)</small>
+                    </label>
+                    <label class="label-date">
+                        <span>Mois de naissance :</span>
+                        <input type="number" class="input-date">
+                        <small>(en chiffres)</small>
+                    </label>
+                    <input type="submit" value="calculer">
+                </fieldset>
+            </form>
+        </main>
+    </div>
+    
+</body>
+</html>
