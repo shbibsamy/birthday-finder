@@ -29,7 +29,7 @@ fieldset {
     flex-direction: column;
     align-items: center;
     min-width: 100%;
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 1rem;
 }
 
@@ -54,10 +54,11 @@ small {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0.5rem;
 }
 
 .label-date span {
-
+    width: 8rem;
 }
 
 /* Inputs */
@@ -65,4 +66,9 @@ small {
     margin-left: 1rem;
     margin-right: 1rem;
     width: 5rem;
+}
+
+.input-calculer {
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
