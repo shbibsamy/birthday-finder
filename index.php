@@ -1,4 +1,4 @@
-<?php include_once("script-birthday-calculator.php") ?>
+<?php require_once("script-birthday-finder.php") ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,13 +11,14 @@
 </head>
 <body>
     <div class="wrapper">
+        <?php echo $hello ?>
         <header>
             <h1>
                 Calcul d'anniversaire
             </h1>
         </header>
         <main>
-            <form action="index.php">
+            <form action="birthday.php" method="get">
                 <label class="label-prenom">
                     <span>
                         Veuillez entrer votre prénom.
@@ -38,7 +39,7 @@
                         <input type="number" class="input-date">
                         <small>(en chiffres)</small>
                     </label>
-                    <input type="submit" value="calculer">
+                    <input type="submit" value="calculer" class="input-calculer">
                 </fieldset>
             </form>
         </main>
