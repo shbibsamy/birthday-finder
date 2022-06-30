@@ -1,3 +1,4 @@
+<?php require_once("script-birthday-finder.php") ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,12 +10,16 @@
     <title>Anniversaire</title>
 </head>
 <body>
-    <main>
-        <?php
-
-
-        ?>
-    </main>
-
+    <div class="wrapper">
+        <main>
+            <div class="resultat-anniversaire">
+                <span>
+                    <?php
+                        echo $resultat;
+                    ?>
+                </span>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
