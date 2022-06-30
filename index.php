@@ -11,19 +11,18 @@
 </head>
 <body>
     <div class="wrapper">
-        <?php echo $hello ?>
         <header>
             <h1>
                 Calcul d'anniversaire
             </h1>
         </header>
         <main>
-            <form action="birthday.php" method="get">
+            <form action="birthday.php" method="post">
                 <label class="label-prenom">
                     <span>
                         Veuillez entrer votre prénom.
                     </span>
-                    <input type="text" name="nom" class="input-nom">
+                    <input type="text" name="prenom" class="input-nom">
                 </label>
                 <fieldset>
                     <legend>
@@ -31,15 +30,15 @@
                     </legend>
                     <label class="label-date">
                         <span>Jour de naissance :</span>
-                        <input type="number" class="input-date">
+                        <input type="text" class="input-date" name="date-jour">
                         <small>(en chiffres)</small>
                     </label>
                     <label class="label-date">
                         <span>Mois de naissance :</span>
-                        <input type="number" class="input-date">
+                        <input type="text" class="input-date" name="date-mois">
                         <small>(en chiffres)</small>
                     </label>
-                    <input type="submit" value="calculer" class="input-calculer">
+                    <input type="submit" value="calculer" name="calculer" class="input-calculer">
                 </fieldset>
             </form>
         </main>
